@@ -38,7 +38,7 @@ const About = () => {
           counter.textContent = Math.ceil(current) + (counter.textContent.includes('%') ? '%' : '+');
           requestAnimationFrame(updateCounter);
         } else {
-          counter.textContent = counter.textContent;
+          counter.textContent = target + (counter.textContent.includes('%') ? '%' : '+');
         }
       };
       
