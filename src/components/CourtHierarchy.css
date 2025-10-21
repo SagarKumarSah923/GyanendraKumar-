@@ -1,0 +1,68 @@
+/* Court Hierarchy Section */
+.hierarchy-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hierarchy-text h3 {
+  font-size: 1.8rem;
+  color: #1e3c72;
+  margin-bottom: 20px;
+}
+
+.hierarchy-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.court-levels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.court-level {
+  text-align: center;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.court-level:hover {
+  transform: translateY(-5px);
+}
+
+.court-level i {
+  font-size: 2.5rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.court-level h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.court-level p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hierarchy-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .court-levels {
+    grid-template-columns: 1fr;
+  }
+}

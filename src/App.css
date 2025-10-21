@@ -1,0 +1,13 @@
+.App {
+  text-align: left;
+}
+
+/* Global styles for the entire app */
+.App * {
+  box-sizing: border-box;
+}
+
+/* Ensure proper spacing and layout */
+.App > * {
+  width: 100%;
+}
